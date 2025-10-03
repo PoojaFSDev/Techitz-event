@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register | TecItZ</title>
+<link rel="icon" href="../picture/logo.jpg.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<!-- Background Video -->
+<video autoplay muted loop id="bg-video">
+    <source src="../video/regvid.mp4" type="video/mp4">
+</video>
+
+<!-- Navbar -->
+<div class="navbar">
+    <h1>TecItZ</h1>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="reg.html" class="active">Register</a></li>
+        <li><a href="explore.html">Event</a></li>
+    </ul>
+</div>
+
+<!-- Registration Section -->
+<div class="register-section">
+    <form id="regForm" action="https://formkeep.com/f/0629d86a86c7" method="POST">
+        <h2>Register for TecItZ</h2>
+        <input type="text" name="Name" placeholder="Full Name" required>
+        <input type="email" name="Email" placeholder="Email Address" required>
+        <select name="Event" required>
+            <option value="" disabled selected>Select Event Type</option>
+            <option value="Technical">Technical</option>
+            <option value="Non-Technical">Non-Technical</option>
+        </select>
+        <textarea name="College" placeholder="College Name" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+
+    <!-- Success Message -->
+    <div id="successMessage" style="display: none; text-align: center;">
+        <h2>Form Submitted Successfully!</h2>
+        <a href="index.html"><button>Back to Home</button></a>
+    </div>
+</div>
+
+<script src="../script/scriptreg.js"></script>
+</body>
+</html>

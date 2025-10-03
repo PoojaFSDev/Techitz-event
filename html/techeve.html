@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Technical Events | TecItZ</title>
+<link rel="icon" href="../picture/logo.jpg.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <h1>TecItZ</h1>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="reg.html">Register</a></li>
+        <li><a href="explore.html" class="active">Event</a></li>
+    </ul>
+</div>
+
+<div class="card-grid">
+    <div class="event-card">
+        <img src="../picture/coding1.jpeg" alt="Coding">
+        <h3>Coding</h3>
+        <button onclick="openModal('Coding','IT Hall','9:30-10:30','Basic programming in any language')">Details</button>
+    </div>
+    <div class="event-card">
+        <img src="../picture/ppt.jpeg" alt="Presentation">
+        <h3>Presentation</h3>
+        <button onclick="openModal('Presentation','IT Hall','9:30-10:30','Full Stack Development')">Details</button>
+    </div>
+    <div class="event-card">
+        <img src="../picture/codedebug.jpeg" alt="Code Debugging">
+        <h3>Code Debugging</h3>
+        <button onclick="openModal('Code Debugging','IT Hall','9:30-10:30','Rectify bugs')">Details</button>
+    </div>
+    <div class="event-card">
+        <img src="../picture/web.jpeg" alt="Web Design">
+        <h3>Web Design</h3>
+        <button onclick="openModal('Web Design','IT Hall','9:30-10:30','Web design for TecItZ')">Details</button>
+    </div>
+</div>
+
+<!-- MODAL -->
+<div class="modal" id="eventModal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <h2 id="eventTitle"></h2>
+        <p><strong>Venue:</strong> <span id="eventVenue"></span></p>
+        <p><strong>Timing:</strong> <span id="eventTime"></span></p>
+        <p><strong>Theme:</strong> <span id="eventTheme"></span></p>
+    </div>
+</div>
+
+<script src="../script/script.js"></script>
+</body>
+</html>
